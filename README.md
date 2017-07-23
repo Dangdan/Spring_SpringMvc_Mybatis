@@ -1,0 +1,3 @@
+# Spring_SpringMvc_Mybatis
+Spring_SpringMvc_Mybatis
+这是我对Spring_SpringMvc_Mybatis的复习时所创建的工程，其中包括了spring和mybatis的整合，以及mybatis的框架原理，springmvc的参数绑定。
