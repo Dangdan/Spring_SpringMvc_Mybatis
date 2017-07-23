@@ -2,15 +2,26 @@ package com.ddd.ssm.pojo;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import com.ddd.ssm.controller.validation.ValidGroup1;
+
 public class Items {
     private Integer id;
 
+    //校验名称在1-30之间
+    //message为出错时显示的信息
+    //groups指定是第一个分组的
+    @Size(min=1,max=30,message="{items.name.length.error}",groups={ValidGroup1.class})
     private String name;
 
     private Float price;
 
     private String pic;
 
+    //非空校验
+    @NotNull(message="{items.createtime.isNUll}")
     private Date createtime;
 
     private String detail;
